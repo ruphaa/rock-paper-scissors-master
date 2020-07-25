@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="game-card">
+        <div class="game-title">
+          <img src="images/logo-bonus.svg" alt="" />
+        </div>
+        <div class="score-board">
+          <div class="score-title">SCORE</div>
+          <div class="score" id="score">0</div>
+        </div>
+      </div>
+      <div class="game-signs">
+        <div class="signs-image">
+          <img src="images/bg-pentagon.svg" alt="" />
+          <div class="sign rock" id="rock">
+            <img src="images/icon-rock.svg" alt="" />
+          </div>
+          <div class="sign paper" id="paper">
+            <img src="images/icon-paper.svg" alt="" />
+          </div>
+          <div class="sign scissors" id="scissors">
+            <img src="images/icon-scissors.svg" alt="" />
+          </div>
+          <div class="sign lizard" id="lizard">
+            <img src="images/icon-lizard.svg" alt="" />
+          </div>
+          <div class="sign spock" id="spock">
+            <img src="images/icon-spock.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="picked-signs hide">
+        <div class="picked you-picked">
+          <div class="picked-title">YOU PICKED</div>
+          <div class="picked-sign" id="user">
+            <div class="chosen rock" id="rock">
+              <img src="images/icon-rock.svg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="picked house-picked">
+          <div class="picked-title">THE HOUSE PICKED</div>
+          <div class="picked-sign" id="house"></div>
+        </div>
+      </div>
+      <div class="result hide">
+        <div class="title"><span id="result"></span></div>
+        <button class="btn" id="replay">PLAY AGAIN</button>
+      </div>
+      <div class="rules">
+        <span>RULES</span>
+      </div>
+    </div>
+    <div class="rule-board">
+      <div class="header">
+        <div class="title">RULES</div>
+        <div class="close"><img src="images/icon-close.svg" alt="" /></div>
+      </div>
+      <div class="rule-content">
+        <img src="images/image-rules-bonus.svg" alt="" />
+      </div>
+    </div>
+    <div class="modal-overlay"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
